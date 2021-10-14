@@ -74,6 +74,8 @@
     #btnB {
         font-size: 20px;
         position:absolute; top:380px; left:45%; width:25%; height:60px; 
+        border-width: 0.4em 0.4em 0.4em 0.4em;
+        border-color: green;
     }
 
     #btnC {
