@@ -39,7 +39,9 @@
             btnCClick(e);
         });
 
-        
+        $('#btnD').click(function(e) {
+            btnDClick(e);
+        });
         init();
     });
     
@@ -161,6 +163,7 @@
         $('#btnA').prop('disabled', false);
         $('#btnB').prop('disabled', false);
         $('#btnC').prop('disabled', false);
+        $('#btnD').prop('disabled', false);
 
         btnCClick(null);
         
@@ -213,7 +216,7 @@
 
     //ButtonDがクリックされたときの処理
     function btnDClick(e){
-      active = true;
+      
     }
     
  
