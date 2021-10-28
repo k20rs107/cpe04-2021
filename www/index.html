@@ -169,7 +169,7 @@
         $('#btnB').prop('disabled', false);
         $('#btnC').prop('disabled', false);
         $('#btnD').prop('disabled', false);
-        $('#btnE').prop('disabled', false);
+        $('#btnE').prop('disabled', true);
 
         btnCClick(null);
         
@@ -200,6 +200,7 @@
         }else{
           $("#btnA").prop("disabled", false);
         }
+        $("#btnE").prop("disabled", true);
         
     }
 
@@ -207,6 +208,7 @@
     function btnBClick(e){
         active = false;
         $("#btnA").prop("disabled", false);
+        $("#btnE").prop("disabled", false);
     }
 
     // ButtonCがクリックされた時の処理
@@ -217,6 +219,7 @@
         $("#time").html("経過時間： 0");
         $("#remain").html("残り時間： " + period);
         $("#btnA").prop("disabled", false);
+        $("#btnE").prop("disabled", true);
         
     }
 
@@ -228,6 +231,8 @@
       $("#second").val(period);
       $("#time").html("経過時間： 0");
       $("#remain").html("残り時間： " + period);
+      $("#btnA").prop("disabled", true);
+      $("#btnE").prop("disabled", true);
     }
 
     //ButtonEがクリックされたときの処理
