@@ -234,6 +234,7 @@
     function btnEClick(e){
       active = true;
       startTime = new Date();
+      period = restart;
     }
     
  
@@ -250,6 +251,7 @@
           if(rest <= 10){
             $("body").css("background-color","orange");
           }
+          restart = rest;
         }
 
 
