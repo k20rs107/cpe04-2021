@@ -85,9 +85,14 @@
 
     #btnD {
       font-size: 20px;
-      position: absolute; top: 500px; left:2%; width:35%; height:60px; 
+      position: absolute; top: 500px; left:64%; width:35%; height:60px; 
       border-width: thick;
       border-style: double;
+    }
+
+    #btnE {
+      font-size: 20px;
+      position: absolute; top: 500px; left: 2%; width: 35%; height: 60px;
     }
     
     #minute {
