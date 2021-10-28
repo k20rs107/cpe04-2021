@@ -216,7 +216,12 @@
 
     //ButtonDがクリックされたときの処理
     function btnDClick(e){
-      
+      active = false;
+      period = 0;
+      $("#minute").val(period);
+      $("#second").val(period);
+      $("#time").html("経過時間： 0");
+      $("#remain").html("残り時間： " + period);
     }
     
  
@@ -234,6 +239,7 @@
             $("body").css("background-color","orange")
           }
         }
+
 
         if(rest <= 0){
           active = false;
